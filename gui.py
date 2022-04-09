@@ -32,7 +32,8 @@ def tela():
     janela.maxsize(width=900, height= 700)
     janela.mainloop()
 
-
+def sair():
+    janela.destroy()
 
 #botoes e label
 def botoes():
@@ -43,7 +44,7 @@ def botoes():
   botaoListar.place(x=170,y=370)
   botaoBuscar =Button(janela,text="Buscar", activebackground="blue",bg="lightblue",width=50)
   botaoBuscar.place(x=170,y=410)
-  botaoSair = Button(janela,text="Sair", activebackground="blue",bg="lightblue",width=50)  
+  botaoSair = Button(janela,text="Sair", activebackground="blue",bg="lightblue",width=50, command=sair)  
   botaoSair.place(x=170,y=450)
 
 exibicao()
